@@ -24,8 +24,8 @@ pub fn render(content: String, title: Option<&String>) -> String {
           meta name="description" content="";
           meta name="author" content="";
           meta name="viewport" content="width=device-width, initial-scale=1";
-          link rel="stylesheet" href="/fake/assets/css/normalize.css";
-          link rel="stylesheet" href="/fake/assets/css/skeleton.css";
+          link rel="stylesheet" href="/assets/css/normalize.css";
+          link rel="stylesheet" href="/assets/css/skeleton.css";
           link rel="alternate" type="application/atom+xml" title={ "Pat Shaughnessy - Feed" } href="http://feeds2.feedburner.com/patshaughnessy";
           link rel="icon" type="image/png" href="images/favicon.png";
         }
