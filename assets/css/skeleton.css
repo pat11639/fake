@@ -51,7 +51,7 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 78%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -441,4 +441,45 @@ h1 {
 
 .date {
   color: #CC0000;
+}
+
+#sidebar a {
+  color: #800;
+  text-decoration:none;
+}
+
+#sidebar a:hover {
+  text-decoration:underline;
+}
+
+#sidebar .header {
+  font-size: 14px;
+  color: #880000;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+  line-height: 14px;
+}
+
+#sidebar ul {
+  list-style:none;
+  padding: 0;
+  margin-top: 0;
+}
+
+#sidebar li {
+  font-size: 11px;
+  line-height: 12px;
+  margin-bottom: 8px;
+}
+
+#sidebar #feed {
+  margin-left: 4px;
+}
+
+#sidebar li#eBook {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 8px;
+  font-weight: normal;
 }
