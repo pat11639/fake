@@ -27,7 +27,10 @@ pub fn render(all_posts: &Vec<Post>) -> String {
                         }
                       }
                       td {
-                        a href=(link.url) {
+                        a href={
+                            "/fake"
+                            (link.url)
+                        } {
                           (link.title)
                         }
                       }
@@ -42,7 +45,7 @@ pub fn render(all_posts: &Vec<Post>) -> String {
 
       div class="two columns" {
         div id="sidebar" {
-          img src="/assets/images/pat.jpg" { }
+          img src="/fake/assets/images/pat.jpg" { }
           div class="header" {
               "Subscribe"
           }
@@ -50,10 +53,10 @@ pub fn render(all_posts: &Vec<Post>) -> String {
             ul {
               li {
                 a id="feed" href="http://feeds.feedburner.com/patshaughnessy" {
-                  img src="/assets/images/feed-icon16x16B.png" { }
+                  img src="/fake/assets/images/feed-icon16x16B.png" { }
                 }
                 a href="http://twitter.com/pat_shaughnessy" {
-                  img width="20" height="20" src="/assets/images/twitter.svg" { }
+                  img width="20" height="20" src="/fake/assets/images/twitter.svg" { }
                 }
               }
             }
@@ -65,7 +68,7 @@ pub fn render(all_posts: &Vec<Post>) -> String {
             ul {
               li {
                 a href="/ruby-under-a-microscope" {
-                  img src="/assets/images/book-cover.png" { }
+                  img src="/fake/assets/images/book-cover.png" { }
                 }
               }
               li id="eBook" {
@@ -81,22 +84,22 @@ pub fn render(all_posts: &Vec<Post>) -> String {
           div class="links" {
             ul {
               li {
-                a href="/2016/11/26/learning-to-read-x86-assembly-language" {
+                a href="/fake/2016/11/26/learning-to-read-x86-assembly-language" {
                   "Learning to Read x86 Assembly Language"
                 }
               }
               li {
-                a href="/2012/1/4/never-create-ruby-strings-longer-than-23-characters" {
+                a href="/fake/2012/1/4/never-create-ruby-strings-longer-than-23-characters" {
                   "Never create Ruby strings longer than 23 characters"
                 }
               }
               li {
-                a href="/2012/3/23/why-you-should-be-excited-about-garbage-collection-in-ruby-2-0" {
+                a href="/fake/2012/3/23/why-you-should-be-excited-about-garbage-collection-in-ruby-2-0" {
                   "Why You Should Be Excited About Garbage Collection in Ruby 2.0"
                 }
               }
               li {
-                a href="/2013/4/3/ruby-2-0-works-hard-so-you-can-be-lazy" {
+                a href="/fake/2013/4/3/ruby-2-0-works-hard-so-you-can-be-lazy" {
                   "Ruby 2.0 Works Hard So You Can Be Lazy"
                 }
               }
