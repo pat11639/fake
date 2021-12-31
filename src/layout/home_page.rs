@@ -28,7 +28,7 @@ pub fn render(all_posts: &Vec<Post>) -> String {
                       }
                       td {
                         a href={
-                            "/fake"
+                            "/fake/"
                             (link.url)
                         } {
                           (link.title)
