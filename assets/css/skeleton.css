@@ -282,7 +282,7 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: inside; }
 ol {
   list-style: decimal inside; }
 ol, ul {
@@ -312,21 +312,6 @@ pre > code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre; }
-
-
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
-th:first-child,
-td:first-child {
-  padding-left: 0; }
-th:last-child,
-td:last-child {
-  padding-right: 0; }
 
 
 /* Spacing
@@ -422,6 +407,14 @@ there.
   text-decoration:none;
 }
 
+#footer {
+  padding: 8px;
+  margin: 0px;
+  color:#333;
+  text-align: center;
+  font-size: 10px;
+}
+
 span#title {
   color: white;
   font-size: 18px;
@@ -439,8 +432,26 @@ h1 {
   margin: 0;
 }
 
-.date {
-  color: #CC0000;
+h2 {
+  color: #880000;
+}
+
+a:visited {
+    color: #551A8B;
+}
+
+.metadata {
+  margin-bottom: 20px;
+  color: #800;
+}
+
+.metadata a {
+  color: #800;
+  text-decoration:none;
+}
+
+#sidebar {
+  margin-right: 20px;
 }
 
 #sidebar a {
@@ -454,7 +465,7 @@ h1 {
 
 #sidebar .header {
   font-size: 14px;
-  color: #880000;
+  color: #800;
   margin-top: 10px;
   margin-bottom: 5px;
   padding-bottom: 0;
@@ -475,6 +486,7 @@ h1 {
 
 #sidebar #feed {
   margin-left: 4px;
+  margin-right: 4px;
 }
 
 #sidebar li#eBook {
@@ -482,4 +494,33 @@ h1 {
   line-height: 12px;
   margin-bottom: 8px;
   font-weight: normal;
+}
+
+#copyright {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color:#333;
+  margin: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+#archive-table {
+  padding: 10px;
+}
+
+#archive-table td {
+  padding-left: 10px;
+}
+
+#archive-table td {
+  padding: 2px;
+  border-bottom: none;
+}
+
+#archive-table td#date {
+  padding: 2px;
+  width: 120px;
+  vertical-align: top;
+  font-size: 1.5rem; 
 }

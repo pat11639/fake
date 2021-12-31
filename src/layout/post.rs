@@ -33,7 +33,7 @@ pub fn render(post: &Post, all_posts: &Vec<Post>, draft: bool) -> String {
               header {
                 h1 { (post.title) }
                 div class="metadata" {
-                  span class="date" { (date_string) }
+                  (date_string)
                   (PreEscaped("&nbsp;&mdash;&nbsp;"))
                   a href="#disqus_thread" data-disqus-identifier={ "https://patshaughnessy.net/" (post.url) } {
                       (PreEscaped("&nbsp; Comments and &nbsp; Reactions"))
@@ -63,13 +63,6 @@ pub fn render(post: &Post, all_posts: &Vec<Post>, draft: bool) -> String {
               }
             }
           }
-          div class="row" id="copyright" {
-            p {
-              "Content and UI design "
-              (PreEscaped("&copy;"))
-              " 2022 Pat Shaughnessy"
-            }
-          }
         }
       }
 
@@ -86,7 +79,7 @@ pub fn render(post: &Post, all_posts: &Vec<Post>, draft: bool) -> String {
                   img src="/assets/images/feed-icon16x16B.png" { }
                 }
                 a href="http://twitter.com/pat_shaughnessy" {
-                  "@pat_shaughnessy"
+                  img width="20" height="20" src="/assets/images/twitter.svg" { }
                 }
               }
             }
@@ -158,28 +151,8 @@ pub fn render(post: &Post, all_posts: &Vec<Post>, draft: bool) -> String {
             }
           }
 
-
         }
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
           @if !draft {
